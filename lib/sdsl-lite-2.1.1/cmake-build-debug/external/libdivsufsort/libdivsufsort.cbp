@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="libdivsufsort"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\googletest\;CMake Files\external\googletest\googlemock\;CMake Files\external\googletest\googletest\;CMake Files\external\googletest\googletest\cmake\;CMake Files\external\libdivsufsort\;CMake Files\external\libdivsufsort\CMakeModules\;CMake Files\external\libdivsufsort\pkgconfig\;CMake Files\external\libdivsufsort\include\;CMake Files\external\libdivsufsort\lib\;CMake Files\CMakeModules\;CMake Files\lib\;CMake Files\include\;CMake Files\include\sdsl\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="divsufsort">
+				<Option output="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/libdivsufsort.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_CONFIG_H=1"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/../include"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 divsufsort"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="divsufsort/fast">
+				<Option output="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/libdivsufsort.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_CONFIG_H=1"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/../include"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 divsufsort/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="divsufsort64">
+				<Option output="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/libdivsufsort64.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_CONFIG_H=1"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/../include"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 divsufsort64"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="divsufsort64/fast">
+				<Option output="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/libdivsufsort64.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_CONFIG_H=1"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/../include"/>
+					<Add directory="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 divsufsort64/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/cmake-build-debug/external/libdivsufsort/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/divsufsort.c">
+			<Option target="divsufsort"/>
+			<Option target="divsufsort64"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/sssort.c">
+			<Option target="divsufsort"/>
+			<Option target="divsufsort64"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/trsort.c">
+			<Option target="divsufsort"/>
+			<Option target="divsufsort64"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/utils.c">
+			<Option target="divsufsort"/>
+			<Option target="divsufsort64"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/Make.helper.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\googletest\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\external\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/VERSION.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/CMakeModules/AppendCompilerFlags.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/CMakeModules/CheckLFS.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/CMakeModules/ProjectCPack.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/CMakeModules/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/pkgconfig/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\pkgconfig\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/pkgconfig/libdivsufsort.pc.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\pkgconfig\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\include\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/include/config.h.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\include\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/include/divsufsort.h.cmake">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\include\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/external/libdivsufsort/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\libdivsufsort\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/CMakeModules/AppendCompilerFlags.cmake">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/CMakeModules/CheckSSE4_2.cmake">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/CMakeModules/FindCxaDemangle.cmake">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/CMakeModules/check_mode_ti.cpp">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/CMakeModules/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\CMakeModules\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/lib/structure_tree.cpp.cmake">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\include\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bit_vector_il.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bit_vectors.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bits.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bp_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bp_support_algorithm.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bp_support_g.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bp_support_gg.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/bp_support_sada.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/coder.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/coder_comma.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/coder_elias_delta.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/coder_elias_gamma.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/coder_fibonacci.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/config.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_bwt.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_config.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_isa.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_lcp.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_lcp_helper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_sa.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/construct_sa_se.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/csa_alphabet_strategy.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/csa_bitcompressed.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/csa_sada.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/csa_sampling_strategy.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/csa_wt.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/cst_fully.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/cst_iterators.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/cst_sada.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/cst_sct3.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/dac_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/enc_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/fast_cache.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/hyb_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/int_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/int_vector_buffer.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/int_vector_io_wrappers.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/int_vector_mapper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/inv_perm_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/io.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/iterators.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/k2_treap.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/k2_treap_algorithm.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/k2_treap_helper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_bitcompressed.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_byte.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_dac.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_support_sada.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_support_tree.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_support_tree2.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_vlc.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/lcp_wt.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/louds_tree.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/memory_management.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/nearest_neighbour_dictionary.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/nn_dict_dynamic.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/qsufsort.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/ram_filebuf.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/ram_fs.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rank_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rank_support_scan.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rank_support_v.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rank_support_v5.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/raster_img.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rmq_succinct_sada.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rmq_succinct_sct.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rmq_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rmq_support_sparse_table.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rrr_helper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rrr_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/rrr_vector_15.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/sd_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/sdsl_concepts.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/select_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/select_support_mcl.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/select_support_scan.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/sfstream.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/sorted_int_stack.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/sorted_multi_stack_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/sorted_stack_support.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/structure_tree.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/suffix_array_algorithm.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/suffix_array_helper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/suffix_arrays.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/suffix_tree_algorithm.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/suffix_tree_helper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/suffix_trees.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/uint128_t.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/uint256_t.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/uintx_t.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/util.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/vectors.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/vlc_vector.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wavelet_trees.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wm_int.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_algorithm.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_ap.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_blcd.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_gmr.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_helper.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_huff.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_hutu.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_int.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_pc.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/include/sdsl/wt_rlmn.hpp">
+			<Option virtualFolder="CMake Files\include\sdsl\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/pasyj/Documents/edgent/SEPrivate/lib/sdsl-lite-2.1.1/test/compile_test.cpp.cmake">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

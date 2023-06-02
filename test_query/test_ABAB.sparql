@@ -1,0 +1,11 @@
+SELECT ?X ?Y ?Z WHERE {
+	?X <hasFather> ?Y .
+	?X <hasPrimarySchoolTeacher> ?Y .
+	?Y <hasFather> ?Z .
+	?Y <hasPrimarySchoolTeacher> ?A .
+}
+
+SELECT ?X ?Y WHERE {
+	?X <hasFather> ?Y .
+	?X <hasPrimarySchoolTeacher> ?Y .
+}

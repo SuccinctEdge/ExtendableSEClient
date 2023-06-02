@@ -1,0 +1,20 @@
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> <http://www.Department3.University0.edu/AssistantProfessor9> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?Y .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?Y .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?Y .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?Y .
+}
+
+SELECT ?X WHERE {
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?Y .
+}

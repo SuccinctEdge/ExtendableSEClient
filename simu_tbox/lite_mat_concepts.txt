@@ -1,0 +1,6 @@
+<http://www.w3.org/ns/sosa#Platform>	1	3	3
+<http://www.w3.org/ns/sosa#Sensor>	2	3	3
+<http://www.w3.org/ns/sosa#Observation>	3	3	3
+<http://www.w3.org/ns/sosa#Result>	4	3	3
+<http://qudt.org/schema/qudt#PressureOrStressUnit>	5	3	3
+<http://qudt.org/schema/qudt#ChemistryUnit>	6	3	3

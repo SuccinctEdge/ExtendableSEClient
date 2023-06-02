@@ -1,0 +1,28 @@
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+}

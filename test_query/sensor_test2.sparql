@@ -1,0 +1,7 @@
+SELECT ?X ?TimeStamp ?Value ?Unit [RANGE 60000 MS STEP 5000 MS] WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa#Observation> .
+	?X <http://qudt.org/schema/qudt#resultTime> ?TimeStamp .
+	?X <http://www.w3.org/ns/sosa#hasResult> ?Y .
+	?Y <http://qudt.org/schema/qudt#numericValue> ?Value .
+	?Y <http://qudt.org/schema/qudt#unit> ?Unit .
+}

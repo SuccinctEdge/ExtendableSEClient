@@ -1,0 +1,6 @@
+<http://www.w3.org/ns/sosa#hosts>	1	3	3	null	false
+<http://www.w3.org/ns/sosa#observes>	2	3	3	null	false
+<http://www.w3.org/ns/sosa#hasResult>	3	3	3	null	false
+<http://qudt.org/schema/qudt#unit>	4	3	3	null	false
+<http://qudt.org/schema/qudt#numericValue>		5	3	3
+<http://qudt.org/schema/qudt#resultTime>	5	3	3

@@ -1,0 +1,37 @@
+SELECT ?X ?Y ?Z WHERE{
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+}
+
+SELECT ?X ?Y ?Z WHERE{
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+}
+
+SELECT ?X ?Y ?Z WHERE{
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+}
+
+SELECT ?X ?Y ?Z WHERE{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ub:Course .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?Y .
+	?Y <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ?Z .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> ?Z .
+}

@@ -1,0 +1,55 @@
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> <http://www.University298.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> <http://www.University298.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> <http://www.University299.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> <http://www.University299.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> <http://www.Department3.University0.edu/AssistantProfessor9> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> <http://www.Department10.University0.edu/Course1> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> <http://www.Department10.University0.edu/Course1> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> <http://www.Department1.University0.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> <http://www.Department1.University0.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> <http://www.Department0.University0.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> <http://www.Department0.University0.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> <http://www.Department1.University0.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> <http://www.Department1.University0.edu> .
+}
+
+SELECT ?X WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> <http://www.Department3.University0.edu/AssistantProfessor9> .
+}

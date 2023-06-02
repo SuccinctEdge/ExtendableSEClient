@@ -1,0 +1,43 @@
+SELECT ?X ?N WHERE {
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?A .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?A <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?N .
+	?P <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?A .
+	?P <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> .
+}
+
+SELECT ?X ?N WHERE {
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?A .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?A <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?N .
+	?P <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?A .
+	?P <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> .
+}
+
+SELECT ?R ?N WHERE{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?D <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> .
+	?U <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	?A <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?P <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Publication> .
+	?P <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?A .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?D .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchInterest> ?R .
+	?D <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?U .
+	?D <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?N .
+}
+
+SELECT ?R ?N WHERE{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+}

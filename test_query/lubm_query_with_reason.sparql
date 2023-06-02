@@ -1,0 +1,973 @@
+SELECT DISTINCT ?X ?Y ?Z WHERE {
+	{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	}
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+}
+
+SELECT DISTINCT ?X ?Y ?Z WHERE {
+	{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	}
+}
+
+SELECT DISTINCT ?X ?Y ?Z WHERE {
+	{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	}
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+}
+
+SELECT DISTINCT ?X ?Y ?Z WHERE {
+	{
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Faculty> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Student> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Employee> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#VisitingProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Chair> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AdministrativeStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Professor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#FullProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#UndergraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssociateProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Director> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#SystemsStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#AssistantProfessor> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Lecturer> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ResearchAssistant> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#PostDoc> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Dean> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#ClericalStaff> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	}
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	{
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+	} UNION {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+	} UNION {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+	}
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?Y .
+}
+
+SELECT ?X ?Y ?Z WHERE { 
+	{
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?Z .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	} UNION {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#headOf> ?Z .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+	}
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z .
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+}
+
+SELECT ?X ?Y ?Z WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#GraduateStudent> .
+	?Z <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#Department> . 
+	?X <http://swat.cse.lehigh.edu/onto/univ-bench.owl#memberOf> ?Z . 
+	?Z <http://swat.cse.lehigh.edu/onto/univ-bench.owl#subOrganizationOf> ?Y .
+	?Y <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#University> .
+}

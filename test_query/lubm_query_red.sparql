@@ -1,0 +1,7 @@
+SELECT ?U ?N ?A WHERE {
+	?S <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?N .
+	?S <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?A .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?M .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchInterest> ?R .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?U .
+}

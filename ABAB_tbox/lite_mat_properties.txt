@@ -1,0 +1,2 @@
+<hasFather>	1	2	2	false
+<hasPrimarySchoolTeacher>	2	2	2	false

@@ -1,0 +1,67 @@
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/FullProfessor0> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/FullProfessor0> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication9> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication9> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication10> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication10> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication11> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication11> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication12> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department7.University0.edu/AssociateProfessor1/Publication12> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department9.University0.edu/GraduateStudent107> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#advisor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/FullProfessor0/Publication5> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#publicationAuthor> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/FullProfessor0> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/UndergraduateStudent69> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/UndergraduateStudent224> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/UndergraduateStudent224> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#takesCourse> ?X .
+}
+
+SELECT ?X WHERE {
+	<http://www.Department0.University0.edu/FullProfessor0> <http://swat.cse.lehigh.edu/onto/univ-bench.owl#teacherOf> ?X .
+}

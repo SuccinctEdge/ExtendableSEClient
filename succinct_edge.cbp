@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="succinct_edge"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="succinct_edge">
+				<Option output="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/succinct_edge" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 succinct_edge"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="succinct_edge/fast">
+				<Option output="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/succinct_edge" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 succinct_edge/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/BitMap.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/BitMap.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Constant.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/DataTypeStore.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/DataTypeStore.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Dictionary.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Dictionary.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/JoinLine.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/JoinLine.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/JoinTable.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/JoinTable.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/JoinVariables.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/JoinVariables.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/LiteMatDictionary.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/LiteMatDictionary.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/QueryEngine.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/QueryEngine.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/RDFStorage.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/RDFStorage.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/RDFTypeStore.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/RDFTypeStore.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/RankBaseElement.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/RankBaseElement.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/TriplePattern.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/TriplePattern.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/TripleStore.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/TripleStore.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/Util.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/main.cpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/quickSortTS.hpp">
+			<Option target="succinct_edge"/>
+		</Unit>
+		<Unit filename="/Users/xu/Documents/Doctorat/git_workplace/succinctEdge_datatype/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

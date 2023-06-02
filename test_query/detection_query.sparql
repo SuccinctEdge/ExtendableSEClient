@@ -1,0 +1,6 @@
+SELECT ?X ?TimeStamp1 WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa#Observation> .
+	?X <http://qudt.org/schema/qudt#resultTime> ?TimeStamp1 .
+	?X <http://www.w3.org/ns/sosa#hasResult> ?Y .
+	?Y <http://qudt.org/schema/qudt#numericValue> S1Value1 .
+}

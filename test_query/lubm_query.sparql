@@ -1,0 +1,5 @@
+SELECT ?D ?S ?T ?A WHERE {
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#doctoralDegreeFrom> ?D .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#mastersDegreeFrom> ?S .
+	?A <http://swat.cse.lehigh.edu/onto/univ-bench.owl#worksFor> ?T .
+}

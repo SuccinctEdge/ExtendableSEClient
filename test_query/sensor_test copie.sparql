@@ -1,0 +1,14 @@
+SELECT ?X ?TimeStamp ?Value ?Unit [WINDOW 300ms] WHERE {
+	?X <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa#Observation> .
+	?X <http://qudt.org/schema/qudt#resultTime> ?TimeStamp .
+	?X <http://www.w3.org/ns/sosa#hasResult> ?Y .
+	?Y <http://qudt.org/schema/qudt#numericValue> ?Value .
+	?Y <http://qudt.org/schema/qudt#unit> ?Unit .
+}
+
+
+
+0 10 20 30 40 50 60
+2 2  3  2  3  2  4
+
+
